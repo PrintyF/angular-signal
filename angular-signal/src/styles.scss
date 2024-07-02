@@ -11,3 +11,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .text-centered {
     text-align: center;
 }
+
+.container {
+    display: flex;
+}
+
+.item {
+    flex-grow: 4;
+}
