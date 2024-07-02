@@ -16,6 +16,6 @@ export class ChildComponent {
   @Input('value') value: BehaviorSubject<number> | null = null;
 
   changeValue(): void {
-    this.value?.next(Math.random()*10);
+    this.value?.next(Math.floor(Math.random()*10));
   }
 }

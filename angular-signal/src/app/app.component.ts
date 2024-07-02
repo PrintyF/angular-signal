@@ -16,6 +16,6 @@ export class AppComponent {
   $value: BehaviorSubject<number> = new BehaviorSubject(0);
 
   changeValue(): void {
-    this.$value.next(Math.random()*10);
+    this.$value.next(Math.floor(Math.random()*10));
   }
 }
