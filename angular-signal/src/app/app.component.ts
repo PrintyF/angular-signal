@@ -11,4 +11,10 @@ import { ChildComponent } from './child/child.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  value = 0;
+
+  changeValue(): void {
+    this.value = Math.floor(Math.random() * 1000);
+  }
 }
+

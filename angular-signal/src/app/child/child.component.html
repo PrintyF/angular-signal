@@ -1,4 +1,5 @@
 <mat-card>
     <mat-card-header class="centered text-centered">child {{name}}</mat-card-header>
-    <button mat-button class="centered">change state</button>
+    <div class="centered">{{value}}</div>
+    <button mat-button (click)="changeValue()" class="centered">change state</button>
 </mat-card>

@@ -11,4 +11,9 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class ChildComponent {
   @Input('name') name: string = '';
+  @Input('value') value: number = 0;
+
+  changeValue(): void {
+    this.value = Math.floor(Math.random() * 1000);
+  }
 }
