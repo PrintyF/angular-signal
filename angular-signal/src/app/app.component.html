@@ -4,11 +4,12 @@
     <mat-card-subtitle>Avec signal</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <button mat-button class="centered">change state</button>
+    {{ value() }}
+    <button mat-button (click)="changeValue()" class="centered">change state</button>
   </mat-card-content>
 </mat-card>
 <br>
 <div class="container">
-  <child class="item" [name]="'one'"></child>
-  <child class="item" [name]="'two'"></child>  
+  <child class="item" [name]="'one'" [value]="value"></child>
+  <child class="item" [name]="'two'" [value]="value"></child>  
 </div>
